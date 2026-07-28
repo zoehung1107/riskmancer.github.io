@@ -1,0 +1,120 @@
+/* CTA button — reuses the site's existing teal (--color-primary-*) tokens only. */
+
+.btn-cta,
+.btn-cta-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease,
+    transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-cta iconify-icon,
+.btn-cta-outline iconify-icon {
+  font-size: 1.1em;
+  transition: transform 0.25s ease;
+}
+
+/* Hero variant — solid fill, used where the button stands alone on the banner. */
+.btn-cta {
+  padding: 0.9rem 1.85rem;
+  background-color: var(--color-primary-500);
+  border: 1px solid var(--color-primary-500);
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 10px 24px -10px rgba(0, 146, 153, 0.6);
+}
+
+.btn-cta:hover,
+.btn-cta:focus-visible {
+  background-color: var(--color-primary-400);
+  border-color: var(--color-primary-400);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px -10px rgba(0, 146, 153, 0.7);
+}
+
+.btn-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px -8px rgba(0, 146, 153, 0.55);
+}
+
+.btn-cta:hover iconify-icon,
+.btn-cta:focus-visible iconify-icon {
+  transform: translateX(3px);
+}
+
+/* Nav variant — outline on the dark header bar, fills solid on hover. */
+.btn-cta-outline {
+  padding: 0.5rem 1.25rem;
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.btn-cta-outline:hover,
+.btn-cta-outline:focus-visible {
+  background-color: var(--color-primary-500);
+  border-color: var(--color-primary-500);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-cta-outline:hover iconify-icon,
+.btn-cta-outline:focus-visible iconify-icon {
+  transform: translateX(2px);
+}
+
+/* Mobile dropdown — full solid pill, sits inside the menu list. */
+.btn-cta-mobile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background-color: var(--color-primary-500);
+  border: 1px solid var(--color-primary-500);
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cta-mobile:hover,
+.btn-cta-mobile:focus-visible {
+  background-color: var(--color-primary-400);
+  border-color: var(--color-primary-400);
+  color: #fff !important;
+}
+
+.btn-cta:focus-visible,
+.btn-cta-outline:focus-visible,
+.btn-cta-mobile:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .btn-cta,
+  .btn-cta-outline,
+  .btn-cta-mobile,
+  .btn-cta iconify-icon,
+  .btn-cta-outline iconify-icon {
+    transition: none !important;
+  }
+
+  .btn-cta:hover,
+  .btn-cta:focus-visible,
+  .btn-cta-outline:hover,
+  .btn-cta-outline:focus-visible {
+    transform: none;
+  }
+}
