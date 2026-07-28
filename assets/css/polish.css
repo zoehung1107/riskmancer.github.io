@@ -1,5 +1,6 @@
-/* Small visual refinements layered on top of the existing theme.
-   No new colors — reuses the site's own --bs-primary / border-radius tokens. */
+/* Editorial-scale visual pass — bigger type, more air, sharper number/label
+   contrast. No new colors: everything below reuses --bs-primary / the site's
+   existing border-radius and shadow tokens. */
 
 .service-img-wrapper img {
   border-radius: var(--bs-border-radius-lg);
@@ -20,47 +21,70 @@
   border-top-width: 2px;
 }
 
-/* Bolder, tighter section headlines — more editorial, less generic template weight. */
+/* Big, tight, confident section headlines — the main "editorial" move. */
 .section-heading {
   font-weight: 800 !important;
-  letter-spacing: -0.01em;
-  line-height: 1.15 !important;
-  font-size: 34px !important;
+  letter-spacing: -0.02em;
+  line-height: 1.02 !important;
+  font-size: 40px !important;
 }
 
 @media (min-width: 1024px) {
   .section-heading {
-    font-size: 44px !important;
+    font-size: 64px !important;
   }
 }
 
 @media (min-width: 1280px) {
   .section-heading {
-    font-size: 54px !important;
+    font-size: 84px !important;
   }
 }
 
-/* Thin accent rule under each section heading, in place of relying on color alone. */
+/* Longer, slightly bolder accent rule under each heading. */
 .section-divider {
-  height: 3px;
-  width: 64px;
+  height: 4px;
+  width: 96px;
   border-radius: 2px;
   background-color: var(--bs-primary);
-  margin-block: 0.75rem 0;
+  margin-block: 1rem 0;
 }
 
 .section-divider-light {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-/* Give the About stats a bigger number / smaller caption contrast. */
+/* More breathing room around the two main content sections. */
+@media (min-width: 1280px) {
+
+  .services,
+  .stats-facts {
+    padding-block: 9rem !important;
+  }
+}
+
+/* Oversized stat numbers with a small, wide-tracked caption underneath —
+   the big-number / small-label contrast borrowed from the reference sites. */
 .stat-number {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
   font-weight: 800 !important;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  line-height: 1 !important;
+  font-size: clamp(3.5rem, 2.5rem + 4vw, 6.5rem) !important;
+}
+
+.stat-number img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.85;
 }
 
 .stat-label {
-  letter-spacing: 0.03em;
+  display: block;
+  margin-top: 0.5rem;
+  letter-spacing: 0.04em;
 }
 
 @media (prefers-reduced-motion: reduce) {
