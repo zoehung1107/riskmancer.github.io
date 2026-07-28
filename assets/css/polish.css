@@ -21,24 +21,23 @@
   border-top-width: 2px;
 }
 
-/* Big, tight, confident section headlines — the main "editorial" move. */
+/* Bold, tight section headlines — impact from weight/tracking, not raw size.
+   Fluid clamp() so it scales with the actual column width instead of
+   jumping to a fixed size that can wrap awkwardly at in-between widths. */
 .section-heading {
   font-weight: 800 !important;
   letter-spacing: -0.02em;
-  line-height: 1.02 !important;
-  font-size: 40px !important;
+  line-height: 1.15 !important;
+  font-size: clamp(1.75rem, 1.2rem + 1.8vw, 3rem) !important;
 }
 
-@media (min-width: 1024px) {
-  .section-heading {
-    font-size: 64px !important;
-  }
-}
-
-@media (min-width: 1280px) {
-  .section-heading {
-    font-size: 84px !important;
-  }
+/* Smaller variant for longer strings (e.g. the bilingual company name)
+   where the full-size heading would wrap awkwardly and feel oversized. */
+.section-heading-sm {
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+  line-height: 1.25 !important;
+  font-size: clamp(1.5rem, 1rem + 1.4vw, 2.75rem) !important;
 }
 
 /* Longer, slightly bolder accent rule under each heading. */
@@ -85,6 +84,20 @@
   display: block;
   margin-top: 0.5rem;
   letter-spacing: 0.04em;
+}
+
+/* Breathing room for the dense bullet text in each service tab panel. */
+.services-tab .nav-tabs h5 {
+  line-height: 1.85 !important;
+}
+
+.services-tab .nav-tabs h5 strong {
+  display: block;
+  margin-top: 0.75em;
+}
+
+.services-tab .nav-tabs h5 strong:first-child {
+  margin-top: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
