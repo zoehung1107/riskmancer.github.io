@@ -1,0 +1,70 @@
+/* Small visual refinements layered on top of the existing theme.
+   No new colors — reuses the site's own --bs-primary / border-radius tokens. */
+
+.service-img-wrapper img {
+  border-radius: var(--bs-border-radius-lg);
+  box-shadow: var(--bs-box-shadow-lg);
+  transition: transform 0.5s ease;
+}
+
+.tab-pane.active .service-img-wrapper img {
+  transform: scale(1.02);
+}
+
+.services-tab .nav-tabs .nav-item {
+  transition: border-top-color 0.3s ease;
+}
+
+.services-tab .nav-tabs .nav-item:has(.nav-link.active) {
+  border-top-color: var(--bs-primary) !important;
+  border-top-width: 2px;
+}
+
+/* Bolder, tighter section headlines — more editorial, less generic template weight. */
+.section-heading {
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+  line-height: 1.15 !important;
+  font-size: 34px !important;
+}
+
+@media (min-width: 1024px) {
+  .section-heading {
+    font-size: 44px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-heading {
+    font-size: 54px !important;
+  }
+}
+
+/* Thin accent rule under each section heading, in place of relying on color alone. */
+.section-divider {
+  height: 3px;
+  width: 64px;
+  border-radius: 2px;
+  background-color: var(--bs-primary);
+  margin-block: 0.75rem 0;
+}
+
+.section-divider-light {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Give the About stats a bigger number / smaller caption contrast. */
+.stat-number {
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  letter-spacing: 0.03em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-img-wrapper img {
+    transition: none;
+  }
+}
