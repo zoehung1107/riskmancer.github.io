@@ -86,6 +86,16 @@
   letter-spacing: 0.04em;
 }
 
+/* The tab title button inherited a huge display-scale font size (fs-10)
+   that only worked at the original wide (50%) column. Now that the column
+   is narrower, scale the button text down so "Virtual CIO & CISO" etc.
+   don't wrap mid-phrase — only at the intended zh/en <br>. */
+.services-tab .nav-tabs .nav-item .nav-link,
+.services-tab .nav-tabs .nav-item .nav-link.active {
+  font-size: clamp(1rem, 0.7rem + 0.9vw, 1.5rem) !important;
+  white-space: normal;
+}
+
 /* Breathing room for the dense bullet text in each service tab panel. */
 .services-tab .nav-tabs h5 {
   line-height: 1.85 !important;
