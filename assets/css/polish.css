@@ -96,9 +96,17 @@
   white-space: normal;
 }
 
-/* Breathing room for the dense bullet text in each service tab panel. */
+/* Breathing room for the dense bullet text in each service tab panel.
+   text-wrap: pretty avoids stranding a single trailing character on its
+   own line when a bullet is just barely too long for the column. */
 .services-tab .nav-tabs h5 {
   line-height: 1.85 !important;
+  text-wrap: pretty;
+}
+
+.services-tab .nav-tabs .nav-item .nav-link,
+.services-tab .nav-tabs .nav-item .nav-link.active {
+  text-wrap: balance;
 }
 
 .services-tab .nav-tabs h5 strong {
