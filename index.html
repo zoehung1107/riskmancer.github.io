@@ -81,8 +81,8 @@
             <a href="#about" class="header-link hstack gap-2 text-white body2 fw-m">
               <img src="assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
                 class="img-fluid animate-spin">關於我們</a>
-            <a href="#contact" class="btn-cta-outline">聯絡我們<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
             <a href="en/" hreflang="en" lang="en" class="header-link body2 fw-m text-white">EN</a>
+            <a href="#contact" class="btn-cta-outline">聯絡我們<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
           </div>
           <div class="btn-group d-md-none">
             <button
@@ -90,44 +90,31 @@
               type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
               <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-primary"></iconify-icon>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end p-4">
+            <div class="dropdown-menu dropdown-menu-end p-4">
               <div class="d-flex flex-column gap-6">
                 <div class="hstack justify-content-between border-bottom pb-6">
                   <p class="mb-0 fs-5 text-dark">Menu</p>
                   <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
                 </div>
-                <div class="d-flex flex-column gap-3">
-                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
-                    <li class="header-item">
-                      <a href="./" aria-current="true"
-                        class="header-link active hstack gap-2 fs-7 fw-bold text-primary"><img
-                          src="assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Home</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="#services" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">服務及解決方案</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="#about" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">關於我們</a>
-                    </li>
-                    <li class="header-item pt-2">
-                      <a href="#contact" class="btn-cta-mobile">聯絡我們<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
-                    </li>
-                    <li class="header-item">
-                      <a href="en/" hreflang="en" lang="en" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">English</a>
-                    </li>
-                </div>
+                <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-3">
+                  <li class="header-item">
+                    <a href="#services" class="header-link fs-7 fw-bold text-dark">服務及解決方案</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#about" class="header-link fs-7 fw-bold text-dark">關於我們</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="en/" hreflang="en" lang="en" class="header-link fs-7 fw-bold text-dark">English</a>
+                  </li>
+                  <li class="header-item pt-2">
+                    <a href="#contact" class="btn-cta-mobile">聯絡我們<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+                  </li>
+                </ul>
                 <div>
                   <h5 class="text-dark fw-bold border-top" href="mailto:bd@riskmancer.com">bd@riskmancer.com</h5>
                 </div>
               </div>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -191,132 +178,93 @@
               </div>
             </div>
           </div>
-          <div class="services-tab">
-            <div class="row gap-5 gap-xl-0">
-              <div class="col-xl-4">
-                <div class="tab-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
-                  <div class="tab-pane active" id="one" role="tabpanel" aria-labelledby="one-tab" tabindex="0">
-                    <div class="service-img-wrapper">
-                      <img src="assets/images/services/services-img-1.jpg" alt="services" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="two" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
-                    <div class="service-img-wrapper">
-                      <img src="assets/images/services/services-img-2.jpg" alt="services" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="three" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
-                    <div class="service-img-wrapper">
-                      <img src="assets/images/services/services-img-3.jpg" alt="services" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="four" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
-                    <div class="service-img-wrapper">
-                      <img src="assets/images/services/services-img-4.jpg" alt="services" class="img-fluid">
-                    </div>
-                  </div>
+          <div class="services-list d-flex flex-column">
+            <div class="service-item row gx-4 gx-xl-6 py-6 py-lg-8 border-top light-gray border-opacity-10"
+              data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+              <div class="col-lg-4">
+                <div class="service-img-wrapper">
+                  <img src="assets/images/services/services-img-1.jpg" alt="風險管理 Risk Management" class="img-fluid">
                 </div>
               </div>
-              <div class="col-xl-8">
-                <div class="d-flex flex-column gap-5">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-delay="200"
-                    data-aos-duration="1000">
-                    <li
-                      class="nav-item py-4 py-lg-8 border-top light-gray border-opacity-10 d-flex align-items-center w-100"
-                      role="presentation">
-                      <div class="row w-100 align-items-start gx-3">
-                        <div class="col-lg-5">
-                          <button
-                            class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 text-start position-relative active"
-                            id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab"
-                            aria-controls="one" aria-selected="true">風險管理<br>Risk Management</button>
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="text-dark text-opacity-70 mb-0 fw-r">
-                            <strong>識別、分析並評估多元領域風險，透過風險處理機制將其降低至可接受程度</strong><br>
-                            <strong>導入符合國際標準或產業需求的安全管理系統及控制措施</strong><br>
-                            <br>
-                            ISO 27001: 資訊安全管理系統(ISMS)<br>
-                            ISO 27701: 隱私資訊管理系統(PIMS)<br>
-                            ISO 27017: 雲端服務資安控制措施<br>
-                            ISO 27018: 公有雲個資保護<br>
-                            ISO 22301: 營運持續管理系統(BCMS)<br>
-                            ISO 13485: 醫療器材品質管理系統標準<br>
-                            ISO 42001: 人工智慧管理系統<br>
-                            TISAX: 汽車業資訊安全標準<br>
-                            AML / CFT (Anti-Money Laundering / Combating the Financing of Terrorism): 金融業防制洗錢及打擊資恐<br>
-                            CMMC: 美國國防供應鏈網路安全成熟度模型認證<br>
-                          </h5>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item py-4 py-lg-8 border-top border-opacity-10 d-flex align-items-center w-100"
-                      role="presentation">
-                      <div class="row w-100 align-items-start gx-3">
-                        <div class="col-lg-5">
-                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 text-start"
-                            id="two-tab" data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab"
-                            aria-controls="two" aria-selected="false">危機處理<br>Crisis Management</button>
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="text-dark text-opacity-70 mb-0 fw-r">
-                            <strong>處理多元類型的事故及危機，協助復原營運</strong><br>
-                            規劃緊急高階人員異動，降低營運衝擊。<br>
-                            緊急接管 IT 系統並獲取全域權限，確保關鍵系統運作。<br>
-                            檢視IT系統設定與日誌，識別漏洞並強化防護。<br>
-                            協助回應勒索病毒攻擊，確保系統穩定並降低業務中斷風險。<br>
-                            <strong>建立事故應變與危機處理能力，降低危機發生後的災害</strong><br>
-                            設計事故應變及危機處理流程，提升組織應變效率。<br>
-                            帶領兵棋推演與桌上演練 TTX (Table Top Exercise)，強化危機意識。<br>
-                            進行應變訓練，制定危機預防計畫，提供復原策略。
-                          </h5>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item py-4 py-lg-8 border-top border-opacity-10 d-flex align-items-center w-100"
-                      role="presentation">
-                      <div class="row w-100 align-items-start gx-3">
-                        <div class="col-lg-5">
-                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 text-start"
-                            id="three-tab" data-bs-toggle="tab" data-bs-target="#three" type="button" role="tab"
-                            aria-controls="three" aria-selected="false">虛擬資訊長及資安長<br>Virtual CIO & CISO</button>
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="text-dark text-opacity-70 mb-0 font-roboto fw-r">
-                            IS and Privacy Governance and Compliance.<br>
-                            IT/IS Strategy Development for Aligning Business Objectives.<br>
-                            Board and Executive Communication on IT/IS Risks.<br>
-                            Business Continuity and Disaster Recovery Planning (BC/DRP) Strategy & Governance.<br>
-                            IT/IS Budget Planning, Project Prioritization, and Cost Optimization.<br>
-                            Digital Transformation Planning and Roadmap.<br>
-                            IS Policy Framework Design & Oversight.
-                          </h5>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item py-4 py-lg-8 border-top border-opacity-10 d-flex align-items-center w-100"
-                      role="presentation">
-                      <div class="row w-100 align-items-start gx-3">
-                        <div class="col-lg-5">
-                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 text-start"
-                            id="four-tab" data-bs-toggle="tab" data-bs-target="#four" type="button" role="tab"
-                            aria-controls="four" aria-selected="false">賽博科學/模控學<br>Cybernetics</button>
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="text-dark text-opacity-70 mb-0 fw-r">
-                            <strong>人工智慧解決方案</strong><br>
-                            量身定制 AI 解決方案，解決推薦系統、自然語言處理、機器人領域的技術應用與問題解決。<br>
-                            <br>
-                            <strong>數據科學</strong><br>
-                            建立完善的數據管理生命週期，涵蓋數據收集、清洗、儲存、整理、分析、維運、監控及刪除，提升數據處理效率。<br>
-                            透過設計數據處理流程及定義關鍵監控指標，識別組織痛點並提前預警風險，強化企業韌性。<br>
-                            依據需求進行數據模擬與分析，支援商業模型決策與未來策略規劃。<br>
-                          </h5>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+              <div class="col-lg-8">
+                <h3 class="service-item-title fw-bold text-dark mb-3">風險管理<br>Risk Management</h3>
+                <h5 class="text-dark text-opacity-70 mb-0 fw-r">
+                  <strong>識別、分析並評估多元領域風險，透過風險處理機制將其降低至可接受程度</strong><br>
+                  <strong>導入符合國際標準或產業需求的安全管理系統及控制措施</strong><br>
+                  <br>
+                  ISO 27001: 資訊安全管理系統(ISMS)<br>
+                  ISO 27701: 隱私資訊管理系統(PIMS)<br>
+                  ISO 27017: 雲端服務資安控制措施<br>
+                  ISO 27018: 公有雲個資保護<br>
+                  ISO 22301: 營運持續管理系統(BCMS)<br>
+                  ISO 13485: 醫療器材品質管理系統標準<br>
+                  ISO 42001: 人工智慧管理系統<br>
+                  TISAX: 汽車業資訊安全標準<br>
+                  AML / CFT (Anti-Money Laundering / Combating the Financing of Terrorism): 金融業防制洗錢及打擊資恐<br>
+                  CMMC: 美國國防供應鏈網路安全成熟度模型認證<br>
+                </h5>
+              </div>
+            </div>
+            <div class="service-item row gx-4 gx-xl-6 py-6 py-lg-8 border-top border-opacity-10"
+              data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
+              <div class="col-lg-4">
+                <div class="service-img-wrapper">
+                  <img src="assets/images/services/services-img-2.jpg" alt="危機處理 Crisis Management" class="img-fluid">
                 </div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="service-item-title fw-bold text-dark mb-3">危機處理<br>Crisis Management</h3>
+                <h5 class="text-dark text-opacity-70 mb-0 fw-r">
+                  <strong>處理多元類型的事故及危機，協助復原營運</strong><br>
+                  規劃緊急高階人員異動，降低營運衝擊。<br>
+                  緊急接管 IT 系統並獲取全域權限，確保關鍵系統運作。<br>
+                  檢視IT系統設定與日誌，識別漏洞並強化防護。<br>
+                  協助回應勒索病毒攻擊，確保系統穩定並降低業務中斷風險。<br>
+                  <strong>建立事故應變與危機處理能力，降低危機發生後的災害</strong><br>
+                  設計事故應變及危機處理流程，提升組織應變效率。<br>
+                  帶領兵棋推演與桌上演練 TTX (Table Top Exercise)，強化危機意識。<br>
+                  進行應變訓練，制定危機預防計畫，提供復原策略。
+                </h5>
+              </div>
+            </div>
+            <div class="service-item row gx-4 gx-xl-6 py-6 py-lg-8 border-top border-opacity-10"
+              data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+              <div class="col-lg-4">
+                <div class="service-img-wrapper">
+                  <img src="assets/images/services/services-img-3.jpg" alt="虛擬資訊長及資安長 Virtual CIO & CISO" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="service-item-title fw-bold text-dark mb-3">虛擬資訊長及資安長<br>Virtual CIO & CISO</h3>
+                <h5 class="text-dark text-opacity-70 mb-0 font-roboto fw-r">
+                  IS and Privacy Governance and Compliance.<br>
+                  IT/IS Strategy Development for Aligning Business Objectives.<br>
+                  Board and Executive Communication on IT/IS Risks.<br>
+                  Business Continuity and Disaster Recovery Planning (BC/DRP) Strategy & Governance.<br>
+                  IT/IS Budget Planning, Project Prioritization, and Cost Optimization.<br>
+                  Digital Transformation Planning and Roadmap.<br>
+                  IS Policy Framework Design & Oversight.
+                </h5>
+              </div>
+            </div>
+            <div class="service-item row gx-4 gx-xl-6 py-6 py-lg-8 border-top border-opacity-10"
+              data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+              <div class="col-lg-4">
+                <div class="service-img-wrapper">
+                  <img src="assets/images/services/services-img-4.jpg" alt="賽博科學/模控學 Cybernetics" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="service-item-title fw-bold text-dark mb-3">賽博科學/模控學<br>Cybernetics</h3>
+                <h5 class="text-dark text-opacity-70 mb-0 fw-r">
+                  <strong>人工智慧解決方案</strong><br>
+                  量身定制 AI 解決方案，解決推薦系統、自然語言處理、機器人領域的技術應用與問題解決。<br>
+                  <br>
+                  <strong>數據科學</strong><br>
+                  建立完善的數據管理生命週期，涵蓋數據收集、清洗、儲存、整理、分析、維運、監控及刪除，提升數據處理效率。<br>
+                  透過設計數據處理流程及定義關鍵監控指標，識別組織痛點並提前預警風險，強化企業韌性。<br>
+                  依據需求進行數據模擬與分析，支援商業模型決策與未來策略規劃。<br>
+                </h5>
               </div>
             </div>
           </div>

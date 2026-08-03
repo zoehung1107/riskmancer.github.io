@@ -81,8 +81,8 @@
             <a href="#about" class="header-link hstack gap-2 text-white body2 fw-m">
               <img src="../assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
                 class="img-fluid animate-spin">About Us</a>
-            <a href="#contact" class="btn-cta-outline">Contact Us<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
             <a href="../" hreflang="zh-Hant" lang="zh-Hant" class="header-link body2 fw-m text-white">中文</a>
+            <a href="#contact" class="btn-cta-outline">Contact Us<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
           </div>
           <div class="btn-group d-md-none">
             <button
@@ -90,44 +90,31 @@
               type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
               <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-primary"></iconify-icon>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end p-4">
+            <div class="dropdown-menu dropdown-menu-end p-4">
               <div class="d-flex flex-column gap-6">
                 <div class="hstack justify-content-between border-bottom pb-6">
                   <p class="mb-0 fs-5 text-dark">Menu</p>
                   <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
                 </div>
-                <div class="d-flex flex-column gap-3">
-                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
-                    <li class="header-item">
-                      <a href="./" aria-current="true"
-                        class="header-link active hstack gap-2 fs-7 fw-bold text-primary"><img
-                          src="../assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Home</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="#services" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Services & Solutions</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="#about" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">About Us</a>
-                    </li>
-                    <li class="header-item pt-2">
-                      <a href="#contact" class="btn-cta-mobile">Contact Us<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
-                    </li>
-                    <li class="header-item">
-                      <a href="../" hreflang="zh-Hant" lang="zh-Hant" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">中文</a>
-                    </li>
-                </div>
+                <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-3">
+                  <li class="header-item">
+                    <a href="#services" class="header-link fs-7 fw-bold text-dark">Services & Solutions</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#about" class="header-link fs-7 fw-bold text-dark">About Us</a>
+                  </li>
+                  <li class="header-item">
+                    <a href="../" hreflang="zh-Hant" lang="zh-Hant" class="header-link fs-7 fw-bold text-dark">中文</a>
+                  </li>
+                  <li class="header-item pt-2">
+                    <a href="#contact" class="btn-cta-mobile">Contact Us<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+                  </li>
+                </ul>
                 <div>
                   <h5 class="text-dark fw-bold border-top" href="mailto:bd@riskmancer.com">bd@riskmancer.com</h5>
                 </div>
               </div>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -191,132 +178,93 @@
               </div>
             </div>
           </div>
-          <div class="services-tab">
-            <div class="row gap-5 gap-xl-0">
-              <div class="col-xl-4">
-                <div class="tab-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
-                  <div class="tab-pane active" id="one" role="tabpanel" aria-labelledby="one-tab" tabindex="0">
-                    <div class="service-img-wrapper">
-                      <img src="../assets/images/services/services-img-1.jpg" alt="Risk management consulting" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="two" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
-                    <div class="service-img-wrapper">
-                      <img src="../assets/images/services/services-img-2.jpg" alt="Crisis management response" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="three" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
-                    <div class="service-img-wrapper">
-                      <img src="../assets/images/services/services-img-3.jpg" alt="Virtual CIO and CISO advisory" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="four" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
-                    <div class="service-img-wrapper">
-                      <img src="../assets/images/services/services-img-4.jpg" alt="Cybernetics and data science" class="img-fluid">
-                    </div>
-                  </div>
+          <div class="services-list d-flex flex-column">
+            <div class="service-item row gx-4 gx-xl-6 py-6 py-lg-8 border-top light-gray border-opacity-10"
+              data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+              <div class="col-lg-4">
+                <div class="service-img-wrapper">
+                  <img src="../assets/images/services/services-img-1.jpg" alt="Risk management consulting" class="img-fluid">
                 </div>
               </div>
-              <div class="col-xl-8">
-                <div class="d-flex flex-column gap-5">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-delay="200"
-                    data-aos-duration="1000">
-                    <li
-                      class="nav-item py-4 py-lg-8 border-top light-gray border-opacity-10 d-flex align-items-center w-100"
-                      role="presentation">
-                      <div class="row w-100 align-items-start gx-3">
-                        <div class="col-lg-5">
-                          <button
-                            class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 text-start position-relative active"
-                            id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab"
-                            aria-controls="one" aria-selected="true">Risk Management</button>
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="text-dark text-opacity-70 mb-0 fw-r">
-                            <strong>Identify, analyze, assess risks across multiple domains, and mitigate exposure to acceptable levels via treatment mechanisms</strong><br>
-                            <strong>Implementing security management systems and controls aligned with international standards and industry requirements</strong><br>
-                            <br>
-                            ISO/IEC 27001: Information Security Management System (ISMS)<br>
-                            ISO/IEC 27701: Privacy Information Management System (PIMS)<br>
-                            ISO/IEC 27017: Security Controls for Cloud Services<br>
-                            ISO/IEC 27018: Protection of PII in Public Clouds<br>
-                            ISO 22301: Business Continuity Management System (BCMS)<br>
-                            ISO 13485: Medical Devices — Quality Management Systems (QMS)<br>
-                            ISO/IEC 42001: Artificial Intelligence Management System (AIMS)<br>
-                            TISAX: Trusted Information Security Assessment Exchange (Automotive Industry)<br>
-                            AML / CFT: Anti-Money Laundering / Combating the Financing of Terrorism<br>
-                            CMMC: Cybersecurity Maturity Model Certification (U.S. Defense Supply Chain)<br>
-                          </h5>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item py-4 py-lg-8 border-top border-opacity-10 d-flex align-items-center w-100"
-                      role="presentation">
-                      <div class="row w-100 align-items-start gx-3">
-                        <div class="col-lg-5">
-                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 text-start"
-                            id="two-tab" data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab"
-                            aria-controls="two" aria-selected="false">Crisis Management</button>
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="text-dark text-opacity-70 mb-0 fw-r">
-                            <strong>Manage diverse incidents and crises, facilitating operational recovery</strong><br>
-                            Plan emergency executive transitions to minimize business disruption<br>
-                            Assume emergency control of IT systems with enterprise-wide administrative access, ensuring continuity of critical operations<br>
-                            Review IT configurations and logs to identify vulnerabilities and strengthen defenses<br>
-                            Support ransomware response to stabilize systems and reduce downtime risks<br>
-                            <strong>Establish incident response and crisis management capabilities to mitigate post-crisis impacts</strong><br>
-                            Design incident response and crisis management workflows to enhance organizational responsiveness<br>
-                            Lead tabletop exercises (TTX) to bolster crisis awareness<br>
-                            Conduct drills, develop prevention plans, and provide recovery strategies
-                          </h5>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item py-4 py-lg-8 border-top border-opacity-10 d-flex align-items-center w-100"
-                      role="presentation">
-                      <div class="row w-100 align-items-start gx-3">
-                        <div class="col-lg-5">
-                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 text-start"
-                            id="three-tab" data-bs-toggle="tab" data-bs-target="#three" type="button" role="tab"
-                            aria-controls="three" aria-selected="false">Virtual CIO & CISO</button>
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="text-dark text-opacity-70 mb-0 font-roboto fw-r">
-                            IS and Privacy Governance and Compliance.<br>
-                            IT/IS Strategy Development Aligned with Business Objectives.<br>
-                            Board and Executive Advisory on IT/IS Risks Communication.<br>
-                            Business Continuity and Disaster Recovery Planning (BC/DRP) Strategy & Governance.<br>
-                            IT/IS Budget Planning, Project Prioritization, and Cost Optimization.<br>
-                            Digital Transformation Planning and Roadmap Development.<br>
-                            IS Policy Framework Design & Oversight.
-                          </h5>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item py-4 py-lg-8 border-top border-opacity-10 d-flex align-items-center w-100"
-                      role="presentation">
-                      <div class="row w-100 align-items-start gx-3">
-                        <div class="col-lg-5">
-                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 text-start"
-                            id="four-tab" data-bs-toggle="tab" data-bs-target="#four" type="button" role="tab"
-                            aria-controls="four" aria-selected="false">Cybernetics</button>
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="text-dark text-opacity-70 mb-0 fw-r">
-                            <strong>AI Solutions</strong><br>
-                            Tailor AI solutions for recommendation systems, NLP, and robotics applications and challenges.<br>
-                            <br>
-                            <strong>Data Science</strong><br>
-                            Establish comprehensive data lifecycle management—from collection, cleansing, storage, organization, analysis, maintenance, monitoring, to deletion—to enhance processing efficiency.<br>
-                            Design data workflows and define key monitoring metrics to identify pain points, provide early risk warnings, and strengthen enterprise resilience.<br>
-                            Perform data modeling, simulation, and analysis to support business decision-making and long-term strategic planning.<br>
-                          </h5>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+              <div class="col-lg-8">
+                <h3 class="service-item-title fw-bold text-dark mb-3">Risk Management</h3>
+                <h5 class="text-dark text-opacity-70 mb-0 fw-r">
+                  <strong>Identify, analyze, assess risks across multiple domains, and mitigate exposure to acceptable levels via treatment mechanisms</strong><br>
+                  <strong>Implementing security management systems and controls aligned with international standards and industry requirements</strong><br>
+                  <br>
+                  ISO/IEC 27001: Information Security Management System (ISMS)<br>
+                  ISO/IEC 27701: Privacy Information Management System (PIMS)<br>
+                  ISO/IEC 27017: Security Controls for Cloud Services<br>
+                  ISO/IEC 27018: Protection of PII in Public Clouds<br>
+                  ISO 22301: Business Continuity Management System (BCMS)<br>
+                  ISO 13485: Medical Devices — Quality Management Systems (QMS)<br>
+                  ISO/IEC 42001: Artificial Intelligence Management System (AIMS)<br>
+                  TISAX: Trusted Information Security Assessment Exchange (Automotive Industry)<br>
+                  AML / CFT: Anti-Money Laundering / Combating the Financing of Terrorism<br>
+                  CMMC: Cybersecurity Maturity Model Certification (U.S. Defense Supply Chain)<br>
+                </h5>
+              </div>
+            </div>
+            <div class="service-item row gx-4 gx-xl-6 py-6 py-lg-8 border-top border-opacity-10"
+              data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
+              <div class="col-lg-4">
+                <div class="service-img-wrapper">
+                  <img src="../assets/images/services/services-img-2.jpg" alt="Crisis management response" class="img-fluid">
                 </div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="service-item-title fw-bold text-dark mb-3">Crisis Management</h3>
+                <h5 class="text-dark text-opacity-70 mb-0 fw-r">
+                  <strong>Manage diverse incidents and crises, facilitating operational recovery</strong><br>
+                  Plan emergency executive transitions to minimize business disruption<br>
+                  Assume emergency control of IT systems with enterprise-wide administrative access, ensuring continuity of critical operations<br>
+                  Review IT configurations and logs to identify vulnerabilities and strengthen defenses<br>
+                  Support ransomware response to stabilize systems and reduce downtime risks<br>
+                  <strong>Establish incident response and crisis management capabilities to mitigate post-crisis impacts</strong><br>
+                  Design incident response and crisis management workflows to enhance organizational responsiveness<br>
+                  Lead tabletop exercises (TTX) to bolster crisis awareness<br>
+                  Conduct drills, develop prevention plans, and provide recovery strategies
+                </h5>
+              </div>
+            </div>
+            <div class="service-item row gx-4 gx-xl-6 py-6 py-lg-8 border-top border-opacity-10"
+              data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+              <div class="col-lg-4">
+                <div class="service-img-wrapper">
+                  <img src="../assets/images/services/services-img-3.jpg" alt="Virtual CIO and CISO advisory" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="service-item-title fw-bold text-dark mb-3">Virtual CIO & CISO</h3>
+                <h5 class="text-dark text-opacity-70 mb-0 font-roboto fw-r">
+                  IS and Privacy Governance and Compliance.<br>
+                  IT/IS Strategy Development Aligned with Business Objectives.<br>
+                  Board and Executive Advisory on IT/IS Risks Communication.<br>
+                  Business Continuity and Disaster Recovery Planning (BC/DRP) Strategy & Governance.<br>
+                  IT/IS Budget Planning, Project Prioritization, and Cost Optimization.<br>
+                  Digital Transformation Planning and Roadmap Development.<br>
+                  IS Policy Framework Design & Oversight.
+                </h5>
+              </div>
+            </div>
+            <div class="service-item row gx-4 gx-xl-6 py-6 py-lg-8 border-top border-opacity-10"
+              data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+              <div class="col-lg-4">
+                <div class="service-img-wrapper">
+                  <img src="../assets/images/services/services-img-4.jpg" alt="Cybernetics and data science" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="service-item-title fw-bold text-dark mb-3">Cybernetics</h3>
+                <h5 class="text-dark text-opacity-70 mb-0 fw-r">
+                  <strong>AI Solutions</strong><br>
+                  Tailor AI solutions for recommendation systems, NLP, and robotics applications and challenges.<br>
+                  <br>
+                  <strong>Data Science</strong><br>
+                  Establish comprehensive data lifecycle management—from collection, cleansing, storage, organization, analysis, maintenance, monitoring, to deletion—to enhance processing efficiency.<br>
+                  Design data workflows and define key monitoring metrics to identify pain points, provide early risk warnings, and strengthen enterprise resilience.<br>
+                  Perform data modeling, simulation, and analysis to support business decision-making and long-term strategic planning.<br>
+                </h5>
               </div>
             </div>
           </div>

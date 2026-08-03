@@ -8,17 +8,15 @@
   transition: transform 0.5s ease;
 }
 
-.tab-pane.active .service-img-wrapper img {
+.service-item:hover .service-img-wrapper img {
   transform: scale(1.02);
 }
 
-.services-tab .nav-tabs .nav-item {
-  transition: border-top-color 0.3s ease;
-}
-
-.services-tab .nav-tabs .nav-item:has(.nav-link.active) {
-  border-top-color: var(--bs-primary) !important;
-  border-top-width: 2px;
+/* Mobile hamburger: the popover width is fixed (see styles.css
+   --bs-dropdown-min-width: 380px), which overflows the viewport on
+   phones narrower than ~410px. Cap it to the available width instead. */
+.header .dropdown-menu {
+  --bs-dropdown-min-width: min(380px, calc(100vw - 2rem));
 }
 
 /* Bold, tight section headlines — impact from weight/tracking, not raw size.
@@ -86,35 +84,29 @@
   letter-spacing: 0.04em;
 }
 
-/* The tab title button inherited a huge display-scale font size (fs-10)
-   that only worked at the original wide (50%) column. Now that the column
-   is narrower, scale the button text down so "Virtual CIO & CISO" etc.
-   don't wrap mid-phrase — only at the intended zh/en <br>. */
-.services-tab .nav-tabs .nav-item .nav-link,
-.services-tab .nav-tabs .nav-item .nav-link.active {
-  font-size: clamp(1rem, 0.7rem + 0.9vw, 1.5rem) !important;
+/* Service item title — scaled down from the original display-scale (fs-10)
+   button size so "Virtual CIO & CISO" etc. don't wrap mid-phrase, only at
+   the intended zh/en <br>. */
+.service-item-title {
+  font-size: clamp(1.1rem, 0.8rem + 1vw, 1.6rem) !important;
   white-space: normal;
+  text-wrap: balance;
 }
 
-/* Breathing room for the dense bullet text in each service tab panel.
+/* Breathing room for the dense bullet text in each service block.
    text-wrap: pretty avoids stranding a single trailing character on its
    own line when a bullet is just barely too long for the column. */
-.services-tab .nav-tabs h5 {
+.service-item h5 {
   line-height: 1.85 !important;
   text-wrap: pretty;
 }
 
-.services-tab .nav-tabs .nav-item .nav-link,
-.services-tab .nav-tabs .nav-item .nav-link.active {
-  text-wrap: balance;
-}
-
-.services-tab .nav-tabs h5 strong {
+.service-item h5 strong {
   display: block;
   margin-top: 0.75em;
 }
 
-.services-tab .nav-tabs h5 strong:first-child {
+.service-item h5 strong:first-child {
   margin-top: 0;
 }
 
