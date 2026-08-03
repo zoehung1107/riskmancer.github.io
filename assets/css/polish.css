@@ -97,7 +97,7 @@
    text-wrap: pretty avoids stranding a single trailing character on its
    own line when a bullet is just barely too long for the column. */
 .service-item h5 {
-  line-height: 1.85 !important;
+  line-height: 2.15 !important;
   text-wrap: pretty;
 }
 
