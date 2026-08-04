@@ -108,7 +108,14 @@ h4.contact-address {
   border-bottom: 1px solid var(--rm-hairline);
 }
 
+/* Header floats transparent over the hero video by default (white content,
+   matching the video's dark overlay), then swaps to a solid paper bar with
+   ink content once scrolled past the hero. */
 .header .header-link {
+  color: #fff;
+}
+
+.header.fixed-header .header-link {
   color: var(--rm-ink);
 }
 
@@ -118,7 +125,10 @@ h4.contact-address {
 
 .btn-cta-outline {
   border-radius: 4px;
-  border: 1.5px solid var(--rm-ink);
+}
+
+.header.fixed-header .btn-cta-outline {
+  border-color: var(--rm-ink);
   color: var(--rm-ink);
 }
 
@@ -178,14 +188,10 @@ h4.contact-address {
   border-radius: 3px;
 }
 
-/* ---------- Hero ---------- */
+/* ---------- Hero: keeps the original skyscraper video + dark overlay ---------- */
 
 .banner-section {
-  background-color: var(--rm-paper);
-}
-
-.banner-section::before {
-  background-color: transparent;
+  background-color: var(--rm-ink);
 }
 
 .hero-eyebrow {
@@ -194,25 +200,7 @@ h4.contact-address {
   letter-spacing: 0.16em;
   color: var(--rm-brass);
   margin-bottom: 1.25rem;
-}
-
-.hero-bamboo {
-  position: absolute;
-  top: 6%;
-  right: 4%;
-  width: min(38vw, 420px);
-  height: auto;
-  opacity: 0.55;
-  pointer-events: none;
-}
-
-@media (max-width: 767.98px) {
-  .hero-bamboo {
-    width: 50vw;
-    top: 4%;
-    right: -6%;
-    opacity: 0.4;
-  }
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
 }
 
 /* ---------- ISO ledger table ---------- */
