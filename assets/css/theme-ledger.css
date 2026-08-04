@@ -181,7 +181,6 @@ body {
   padding: 0.8rem 0;
   border-bottom: 1px solid var(--rm-hairline);
   align-items: baseline;
-  max-width: 680px;
 }
 
 @media (max-width: 575.98px) {
@@ -206,8 +205,22 @@ body {
 
 /* ---------- Service icons: small circular badges instead of stock photos ---------- */
 
+/* Fixed-width flex layout instead of Bootstrap's percentage-based grid
+   columns: a 12-col split grows the text block (and the blank space
+   after it) with the viewport. Capping the body at a flat max-width
+   keeps the card compact at any screen size. */
 .service-item {
-  --bs-gutter-x: 1.25rem;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.service-item-icon {
+  flex: 0 0 auto;
+}
+
+.service-item-body {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .service-img-wrapper {
