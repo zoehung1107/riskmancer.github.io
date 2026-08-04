@@ -212,7 +212,7 @@ body {
 .service-item {
   align-items: flex-start;
   justify-content: center;
-  gap: 1.75rem;
+  gap: 2.5rem;
 }
 
 .service-item-icon {
