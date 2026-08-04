@@ -211,7 +211,8 @@ body {
    keeps the card compact at any screen size. */
 .service-item {
   align-items: flex-start;
-  gap: 1.25rem;
+  justify-content: center;
+  gap: 1.75rem;
 }
 
 .service-item-icon {
