@@ -135,17 +135,6 @@ body {
   box-shadow: 0 16px 30px -10px rgba(217, 174, 69, 0.6);
 }
 
-/* ---------- Chapter marks (replaces the generic 01/02/03 badges) ---------- */
-
-.chapter-mark {
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--rm-brass);
-  letter-spacing: 0.04em;
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-
 .services .badge,
 .stats-facts .badge,
 .get-in-touch .badge {
@@ -192,6 +181,7 @@ body {
   padding: 0.8rem 0;
   border-bottom: 1px solid var(--rm-hairline);
   align-items: baseline;
+  max-width: 680px;
 }
 
 @media (max-width: 575.98px) {
