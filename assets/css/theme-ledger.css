@@ -9,8 +9,8 @@
 
 :root {
   /* Signature palette */
-  --rm-paper: #f4f1e6;
-  --rm-paper-deep: #ece6d5;
+  --rm-paper: #ffffff;
+  --rm-paper-deep: #f2f1eb;
   --rm-ink: #16241f;
   --rm-jade: #157b71;
   --rm-jade-deep: #0a4c47;
@@ -38,14 +38,14 @@
   --bs-dark-light: rgba(22, 36, 31, 0.72);
   --bs-dark-light-rgb: 22, 36, 31;
   --bs-light: var(--rm-paper-deep);
-  --bs-light-rgb: 236, 230, 213;
+  --bs-light-rgb: 242, 241, 235;
   --bs-light-gray: var(--rm-paper-deep);
-  --bs-light-gray-rgb: 236, 230, 213;
+  --bs-light-gray-rgb: 242, 241, 235;
   --bs-muted: rgba(22, 36, 31, 0.62);
   --bs-muted-rgb: 22, 36, 31;
 
   --bs-body-bg: var(--rm-paper);
-  --bs-body-bg-rgb: 244, 241, 230;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-body-color: rgba(22, 36, 31, 0.8);
   --bs-body-color-rgb: 22, 36, 31;
   --bs-border-color: var(--rm-hairline);
@@ -92,7 +92,7 @@ h4.contact-address {
 }
 
 .section-divider-light {
-  background-color: rgba(244, 241, 230, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* ---------- Header ---------- */
@@ -102,7 +102,7 @@ h4.contact-address {
 }
 
 .header.fixed-header {
-  background-color: rgba(244, 241, 230, 0.96);
+  background-color: rgba(255, 255, 255, 0.96);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--rm-hairline);
