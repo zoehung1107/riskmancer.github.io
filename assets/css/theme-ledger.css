@@ -14,6 +14,8 @@
   --rm-jade-deep: #0a4c47;
   --rm-brass: #a9743a;
   --rm-brass-deep: #7d5527;
+  --rm-goose: #fbc400;
+  --rm-goose-deep: #d9a600;
   --rm-hairline: rgba(22, 36, 31, 0.14);
 
   /* Remap the template's own token layer onto the new palette so every
@@ -102,46 +104,35 @@ body {
   color: var(--rm-jade-deep) !important;
 }
 
-.btn-cta-outline {
+/* Eye-catching solid goose-yellow CTA, consistent everywhere (header,
+   hero, mobile menu) regardless of what's behind it. */
+.btn-cta-outline,
+.btn-cta,
+.btn-cta-mobile {
   border-radius: 4px;
-}
-
-.header.fixed-header .btn-cta-outline {
-  border-color: var(--rm-ink);
-  color: var(--rm-ink);
-}
-
-.btn-cta-outline:hover,
-.btn-cta-outline:focus-visible {
-  background-color: var(--rm-jade-deep);
-  border-color: var(--rm-jade-deep);
-  color: var(--rm-paper);
+  background-color: var(--rm-goose);
+  border-color: var(--rm-goose);
+  color: var(--rm-ink) !important;
 }
 
 .btn-cta {
-  border-radius: 4px;
-  background-color: var(--rm-jade-deep);
-  border-color: var(--rm-jade-deep);
-  box-shadow: 0 10px 24px -10px rgba(10, 76, 71, 0.45);
+  box-shadow: 0 10px 24px -10px rgba(217, 174, 69, 0.55);
+}
+
+.btn-cta-outline:hover,
+.btn-cta-outline:focus-visible,
+.btn-cta:hover,
+.btn-cta:focus-visible,
+.btn-cta-mobile:hover,
+.btn-cta-mobile:focus-visible {
+  background-color: var(--rm-goose-deep);
+  border-color: var(--rm-goose-deep);
+  color: var(--rm-ink) !important;
 }
 
 .btn-cta:hover,
 .btn-cta:focus-visible {
-  background-color: var(--rm-jade);
-  border-color: var(--rm-jade);
-  box-shadow: 0 16px 30px -10px rgba(10, 76, 71, 0.5);
-}
-
-.btn-cta-mobile {
-  border-radius: 4px;
-  background-color: var(--rm-jade-deep);
-  border-color: var(--rm-jade-deep);
-}
-
-.btn-cta-mobile:hover,
-.btn-cta-mobile:focus-visible {
-  background-color: var(--rm-jade);
-  border-color: var(--rm-jade);
+  box-shadow: 0 16px 30px -10px rgba(217, 174, 69, 0.6);
 }
 
 /* ---------- Chapter marks (replaces the generic 01/02/03 badges) ---------- */
@@ -174,7 +165,7 @@ body {
 .hero-eyebrow {
   font-size: 0.95rem;
   letter-spacing: 0.16em;
-  color: var(--rm-brass);
+  color: var(--rm-goose);
   margin-bottom: 1.25rem;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
 }
