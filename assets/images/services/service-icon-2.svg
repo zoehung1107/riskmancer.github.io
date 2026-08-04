@@ -1,0 +1,12 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="危機處理">
+  <rect x="0" y="0" width="240" height="240" fill="#eef3f1"/>
+  <g transform="translate(80,55)">
+    <path d="M40 0 L80 14 L80 65 C80 100 60 122 40 130 C20 122 0 100 0 65 L0 14 Z"
+      fill="none" stroke="#0a4c47" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M40 20 L52 55 L40 55 L48 108" stroke="#fbc400" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g stroke="#0a4c47" stroke-width="2">
+      <line x1="34" y1="46" x2="46" y2="40"/>
+      <line x1="32" y1="72" x2="46" y2="66"/>
+    </g>
+  </g>
+</svg>

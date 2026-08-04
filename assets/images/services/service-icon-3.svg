@@ -1,0 +1,15 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="虛擬資訊長及資安長">
+  <rect x="0" y="0" width="240" height="240" fill="#eef3f1"/>
+  <g transform="translate(70,70)">
+    <circle cx="50" cy="50" r="49" fill="none" stroke="#0a4c47" stroke-width="2.5"/>
+    <circle cx="50" cy="50" r="3" fill="#0a4c47"/>
+    <g stroke="#0a4c47" stroke-width="1.5" opacity="0.5">
+      <line x1="50" y1="4" x2="50" y2="14"/>
+      <line x1="50" y1="86" x2="50" y2="96"/>
+      <line x1="4" y1="50" x2="14" y2="50"/>
+      <line x1="86" y1="50" x2="96" y2="50"/>
+    </g>
+    <path d="M50 50 L68 20 L58 50 Z" fill="#fbc400"/>
+    <path d="M50 50 L32 80 L42 50 Z" fill="#0a4c47"/>
+  </g>
+</svg>

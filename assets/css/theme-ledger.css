@@ -214,10 +214,16 @@ body {
   font-size: 0.95rem;
 }
 
-/* ---------- Service imagery: nudge stock photography toward the palette ---------- */
+/* ---------- Service icons: small circular badges instead of stock photos ---------- */
+
+.service-img-wrapper {
+  max-width: 128px;
+}
 
 .service-img-wrapper img {
-  filter: saturate(0.88) sepia(0.08);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
   border: 1px solid var(--rm-hairline);
 }
 
