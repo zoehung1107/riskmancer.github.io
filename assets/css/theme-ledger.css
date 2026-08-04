@@ -219,7 +219,8 @@ body {
 }
 
 .service-item-body {
-  flex: 1 1 auto;
+  flex: 1 1 620px;
+  max-width: 620px;
   min-width: 0;
 }
 
