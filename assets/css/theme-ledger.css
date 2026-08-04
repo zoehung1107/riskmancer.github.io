@@ -5,8 +5,6 @@
    (chapter marks, the ISO ledger table, the hero signature).
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Roboto+Mono:wght@400;500;600;700&display=swap');
-
 :root {
   /* Signature palette */
   --rm-paper: #ffffff;
@@ -17,8 +15,6 @@
   --rm-brass: #a9743a;
   --rm-brass-deep: #7d5527;
   --rm-hairline: rgba(22, 36, 31, 0.14);
-  --rm-serif: "Noto Serif TC", "Songti TC", Georgia, serif;
-  --rm-mono: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
 
   /* Remap the template's own token layer onto the new palette so every
      component built on --bs-primary / --color-primary-* / --bs-dark
@@ -68,23 +64,6 @@
 
 body {
   background-color: var(--rm-paper);
-}
-
-/* ---------- Typography: serif for display, mono for records ---------- */
-
-h1, h2, h3,
-.section-heading,
-.section-heading-sm,
-.service-item-title,
-.banner-section h2 {
-  font-family: var(--rm-serif) !important;
-}
-
-.stat-number,
-.iso-code,
-.footer p,
-h4.contact-address {
-  font-family: var(--rm-mono);
 }
 
 .section-divider {
@@ -168,7 +147,6 @@ h4.contact-address {
 /* ---------- Chapter marks (replaces the generic 01/02/03 badges) ---------- */
 
 .chapter-mark {
-  font-family: var(--rm-serif);
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--rm-brass);
@@ -180,7 +158,6 @@ h4.contact-address {
 .services .badge,
 .stats-facts .badge,
 .get-in-touch .badge {
-  font-family: var(--rm-mono);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.72rem;
@@ -195,7 +172,6 @@ h4.contact-address {
 }
 
 .hero-eyebrow {
-  font-family: var(--rm-serif);
   font-size: 0.95rem;
   letter-spacing: 0.16em;
   color: var(--rm-brass);
