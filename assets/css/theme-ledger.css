@@ -1,0 +1,283 @@
+/* ============================================================
+   RISKMANCER — 帳冊與竹節 Ledger & Bamboo theme
+   Loads after styles.css / cta.css / polish.css and overrides
+   the design-token layer plus a small set of bespoke components
+   (chapter marks, the ISO ledger table, the hero signature).
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Signature palette */
+  --rm-paper: #f4f1e6;
+  --rm-paper-deep: #ece6d5;
+  --rm-ink: #16241f;
+  --rm-jade: #157b71;
+  --rm-jade-deep: #0a4c47;
+  --rm-brass: #a9743a;
+  --rm-brass-deep: #7d5527;
+  --rm-hairline: rgba(22, 36, 31, 0.14);
+  --rm-serif: "Noto Serif TC", "Songti TC", Georgia, serif;
+  --rm-mono: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* Remap the template's own token layer onto the new palette so every
+     component built on --bs-primary / --color-primary-* / --bs-dark
+     inherits it automatically. */
+  --color-primary-100: #dfe9e4;
+  --color-primary-200: #c3d7cf;
+  --color-primary-300: #9dbdb5;
+  --color-primary-400: #2f6b62;
+  --color-primary-500: #0a4c47;
+
+  --bs-primary: var(--rm-jade-deep);
+  --bs-primary-rgb: 10, 76, 71;
+  --bs-secondary: var(--rm-ink);
+  --bs-secondary-rgb: 22, 36, 31;
+  --bs-dark: var(--rm-ink);
+  --bs-dark-rgb: 22, 36, 31;
+  --bs-dark-light: rgba(22, 36, 31, 0.72);
+  --bs-dark-light-rgb: 22, 36, 31;
+  --bs-light: var(--rm-paper-deep);
+  --bs-light-rgb: 236, 230, 213;
+  --bs-light-gray: var(--rm-paper-deep);
+  --bs-light-gray-rgb: 236, 230, 213;
+  --bs-muted: rgba(22, 36, 31, 0.62);
+  --bs-muted-rgb: 22, 36, 31;
+
+  --bs-body-bg: var(--rm-paper);
+  --bs-body-bg-rgb: 244, 241, 230;
+  --bs-body-color: rgba(22, 36, 31, 0.8);
+  --bs-body-color-rgb: 22, 36, 31;
+  --bs-border-color: var(--rm-hairline);
+  --bs-heading-color: var(--rm-ink);
+  --bs-emphasis-color: var(--rm-ink);
+  --bs-link-color: var(--rm-ink);
+  --bs-link-hover-color: var(--rm-brass);
+  --bs-focus-ring-color: rgba(10, 76, 71, 0.25);
+}
+
+::selection {
+  background-color: var(--rm-jade-deep);
+  color: var(--rm-paper);
+}
+
+::-moz-selection {
+  background-color: var(--rm-jade-deep);
+  color: var(--rm-paper);
+}
+
+body {
+  background-color: var(--rm-paper);
+}
+
+/* ---------- Typography: serif for display, mono for records ---------- */
+
+h1, h2, h3,
+.section-heading,
+.section-heading-sm,
+.service-item-title,
+.banner-section h2 {
+  font-family: var(--rm-serif) !important;
+}
+
+.stat-number,
+.iso-code,
+.footer p,
+h4.contact-address {
+  font-family: var(--rm-mono);
+}
+
+.section-divider {
+  background-color: var(--rm-jade-deep);
+}
+
+.section-divider-light {
+  background-color: rgba(244, 241, 230, 0.7);
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  background: transparent;
+}
+
+.header.fixed-header {
+  background-color: rgba(244, 241, 230, 0.96);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--rm-hairline);
+}
+
+.header .header-link {
+  color: var(--rm-ink);
+}
+
+.header .toggle-menu .menu-icon {
+  color: var(--rm-jade-deep) !important;
+}
+
+.btn-cta-outline {
+  border-radius: 4px;
+  border: 1.5px solid var(--rm-ink);
+  color: var(--rm-ink);
+}
+
+.btn-cta-outline:hover,
+.btn-cta-outline:focus-visible {
+  background-color: var(--rm-jade-deep);
+  border-color: var(--rm-jade-deep);
+  color: var(--rm-paper);
+}
+
+.btn-cta {
+  border-radius: 4px;
+  background-color: var(--rm-jade-deep);
+  border-color: var(--rm-jade-deep);
+  box-shadow: 0 10px 24px -10px rgba(10, 76, 71, 0.45);
+}
+
+.btn-cta:hover,
+.btn-cta:focus-visible {
+  background-color: var(--rm-jade);
+  border-color: var(--rm-jade);
+  box-shadow: 0 16px 30px -10px rgba(10, 76, 71, 0.5);
+}
+
+.btn-cta-mobile {
+  border-radius: 4px;
+  background-color: var(--rm-jade-deep);
+  border-color: var(--rm-jade-deep);
+}
+
+.btn-cta-mobile:hover,
+.btn-cta-mobile:focus-visible {
+  background-color: var(--rm-jade);
+  border-color: var(--rm-jade);
+}
+
+/* ---------- Chapter marks (replaces the generic 01/02/03 badges) ---------- */
+
+.chapter-mark {
+  font-family: var(--rm-serif);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--rm-brass);
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.services .badge,
+.stats-facts .badge,
+.get-in-touch .badge {
+  font-family: var(--rm-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 3px;
+}
+
+/* ---------- Hero ---------- */
+
+.banner-section {
+  background-color: var(--rm-paper);
+}
+
+.banner-section::before {
+  background-color: transparent;
+}
+
+.hero-eyebrow {
+  font-family: var(--rm-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.16em;
+  color: var(--rm-brass);
+  margin-bottom: 1.25rem;
+}
+
+.hero-bamboo {
+  position: absolute;
+  top: 6%;
+  right: 4%;
+  width: min(38vw, 420px);
+  height: auto;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+@media (max-width: 767.98px) {
+  .hero-bamboo {
+    width: 50vw;
+    top: 4%;
+    right: -6%;
+    opacity: 0.4;
+  }
+}
+
+/* ---------- ISO ledger table ---------- */
+
+.lead-note {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--rm-ink);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.iso-ledger {
+  border-top: 1px solid var(--rm-hairline);
+}
+
+.iso-ledger-row {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 0.5rem 1.5rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--rm-hairline);
+  align-items: baseline;
+}
+
+@media (max-width: 575.98px) {
+  .iso-ledger-row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+.iso-code {
+  font-weight: 700;
+  color: var(--rm-jade-deep);
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+}
+
+.iso-desc {
+  color: var(--rm-ink);
+  opacity: 0.78;
+  font-size: 0.95rem;
+}
+
+/* ---------- Service imagery: nudge stock photography toward the palette ---------- */
+
+.service-img-wrapper img {
+  filter: saturate(0.88) sepia(0.08);
+  border: 1px solid var(--rm-hairline);
+}
+
+/* Pre-existing overflow: Bootstrap's .text-nowrap utility (!important)
+   keeps the EN tagline on one line past where it fits on narrow phones,
+   even at the reduced font-size already set in polish.css. */
+@media (max-width: 480px) {
+  .banner-section h3.font-roboto.text-nowrap {
+    white-space: normal !important;
+  }
+}
+
+/* ---------- Footer ---------- */
+
+.footer p {
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}

@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="assets/css/font-zh-tw.css" />
   <link rel="stylesheet" href="assets/css/cta.css" />
   <link rel="stylesheet" href="assets/css/polish.css" />
+  <link rel="stylesheet" href="assets/css/theme-ledger.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -67,21 +68,21 @@
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
           <a href="./" class="logo-white">
-            <img src="assets/images/logos/logo-white.svg" alt="logo" class="img-fluid">
+            <img src="assets/images/logos/logo-mark.svg" alt="logo" class="img-fluid">
           </a>
           <a href="./" class="logo-dark">
-            <img src="assets/images/logos/logo-white.svg" alt="logo" class="img-fluid">
+            <img src="assets/images/logos/logo-mark.svg" alt="logo" class="img-fluid">
           </a>
         </div>
         <div class="d-flex align-items-center gap-4">
           <div class="d-none d-md-block d-md-flex align-items-center gap-6">
-            <a href="#services" class="header-link hstack gap-2 text-white body2 fw-m">
+            <a href="#services" class="header-link hstack gap-2 body2 fw-m">
               <img src="assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
                 class="img-fluid animate-spin">服務及解決方案</a>
-            <a href="#about" class="header-link hstack gap-2 text-white body2 fw-m">
+            <a href="#about" class="header-link hstack gap-2 body2 fw-m">
               <img src="assets/images/svgs/icon-symbol.svg" alt="" width="20" height="20"
                 class="img-fluid animate-spin">關於我們</a>
-            <a href="en/" hreflang="en" lang="en" class="header-link body2 fw-m text-white">EN</a>
+            <a href="en/" hreflang="en" lang="en" class="header-link body2 fw-m">EN</a>
             <a href="#contact" class="btn-cta-outline">聯絡我們<iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
           </div>
           <div class="btn-group d-md-none">
@@ -122,23 +123,22 @@
   </header>
   <div class="page-wrapper overflow-hidden">
     <section class="banner-section position-relative d-flex align-items-end min-vh-100 pd-l-24">
-      <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
-        <source src="assets/images/backgrounds/banner-video.mp4" type="video/mp4" />
-      </video>
+      <img src="assets/images/svgs/bamboo-motif.svg" alt="" class="hero-bamboo" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1200">
       <div class="container">
         <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
           <div class="row align-items-center banner-row">
-            <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div class="d-flex flex-column align-items-start gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <p class="hero-eyebrow mb-0">思維風險管理顧問股份有限公司</p>
               <img src="assets/images/logos/banner-logo.svg" class="banner-logo img-fluid ">
             </div>
             <div class="col-xl-4">
               <div class="d-flex align-items-center mt-4">
                 <img src="assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid">
                 <div class="d-flex flex-column flex-md-row align-items-md-end gap-1">
-                  <h2 class="mb-0 text-white text-nowrap">
+                  <h2 class="mb-0 text-nowrap">
                     &nbsp 超越風險，邁向韌性
                   </h2>
-                  <h3 class="mb-0 text-white font-roboto fw-m text-nowrap">
+                  <h3 class="mb-0 font-roboto fw-m text-nowrap">
                     &nbsp Go Beyond Risk. Leap Toward Resilience.
                   </h3>
                 </div>
@@ -158,8 +158,7 @@
             <div class="col-xl-4 col-xxl-4">
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
-                <span
-                  class="round-36 flex-shrink-0 text-light rounded-circle bg-primary hstack justify-content-center fw-medium">01</span>
+                <span class="chapter-mark">卷一</span>
                 <hr class="border-line text-primary">
                 <span class="badge text-dark bg-light-gray ">服務及解決方案</span>
               </div>
@@ -188,21 +187,22 @@
               </div>
               <div class="col-lg-8">
                 <h3 class="service-item-title fw-bold text-dark mb-3">風險管理<br>Risk Management</h3>
-                <h5 class="text-dark text-opacity-70 mb-0 fw-r">
-                  <strong>識別、分析並評估多元領域風險，透過風險處理機制將其降低至可接受程度</strong><br>
-                  <strong>導入符合國際標準或產業需求的安全管理系統及控制措施</strong><br>
-                  <br>
-                  ISO 27001: 資訊安全管理系統(ISMS)<br>
-                  ISO 27701: 隱私資訊管理系統(PIMS)<br>
-                  ISO 27017: 雲端服務資安控制措施<br>
-                  ISO 27018: 公有雲個資保護<br>
-                  ISO 22301: 營運持續管理系統(BCMS)<br>
-                  ISO 13485: 醫療器材品質管理系統標準<br>
-                  ISO 42001: 人工智慧管理系統<br>
-                  TISAX: 汽車業資訊安全標準<br>
-                  AML / CFT (Anti-Money Laundering / Combating the Financing of Terrorism): 金融業防制洗錢及打擊資恐<br>
-                  CMMC: 美國國防供應鏈網路安全成熟度模型認證<br>
-                </h5>
+                <div class="lead-note fw-r">
+                  <strong>識別、分析並評估多元領域風險，透過風險處理機制將其降低至可接受程度。</strong>
+                  <strong>導入符合國際標準或產業需求的安全管理系統及控制措施。</strong>
+                </div>
+                <div class="iso-ledger">
+                  <div class="iso-ledger-row"><span class="iso-code">ISO 27001</span><span class="iso-desc">資訊安全管理系統 (ISMS)</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">ISO 27701</span><span class="iso-desc">隱私資訊管理系統 (PIMS)</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">ISO 27017</span><span class="iso-desc">雲端服務資安控制措施</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">ISO 27018</span><span class="iso-desc">公有雲個資保護</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">ISO 22301</span><span class="iso-desc">營運持續管理系統 (BCMS)</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">ISO 13485</span><span class="iso-desc">醫療器材品質管理系統標準</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">ISO 42001</span><span class="iso-desc">人工智慧管理系統</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">TISAX</span><span class="iso-desc">汽車業資訊安全標準</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">AML / CFT</span><span class="iso-desc">(Anti-Money Laundering / Combating the Financing of Terrorism) 金融業防制洗錢及打擊資恐</span></div>
+                  <div class="iso-ledger-row"><span class="iso-code">CMMC</span><span class="iso-desc">美國國防供應鏈網路安全成熟度模型認證</span></div>
+                </div>
               </div>
             </div>
             <div class="service-item row gx-5 gy-4 py-6 py-lg-8 border-top border-opacity-10"
@@ -277,8 +277,7 @@
           <div class="col-xl-4 col-xxl-4">
             <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
               data-aos-duration="1000">
-              <span
-                class="round-36 flex-shrink-0 text-light rounded-circle bg-primary-400 hstack justify-content-center fw-medium">02</span>
+              <span class="chapter-mark">卷二</span>
               <hr class="border-line text-light-gray">
               <span class="badge text-bg-light">關於我們</span>
             </div>
@@ -346,8 +345,7 @@
               <div class="col-xl-4 col-xxl-4">
                 <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                   data-aos-duration="1000">
-                  <span
-                    class="round-36 flex-shrink-0 text-light rounded-circle bg-primary hstack justify-content-center fw-medium">03</span>
+                  <span class="chapter-mark">卷三</span>
                   <hr class="border-line text-primary">
                   <span class="badge text-dark text-bg-light">聯絡我們</span>
                 </div>
@@ -369,7 +367,7 @@
                 <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000"> </p>
               </div>
               <div class="col-xl-8">
-                <h4 class="mb-0 text-dark-light fw-r" data-aos="fade-right" data-aos-delay="100"
+                <h4 class="mb-0 text-dark-light fw-r contact-address" data-aos="fade-right" data-aos-delay="100"
                   data-aos-duration="1000">
                   110059<br>
                   台北市信義區松隆路 102 號 14 樓之 1<br>
