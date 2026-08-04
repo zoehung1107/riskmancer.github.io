@@ -216,6 +216,10 @@ body {
 
 /* ---------- Service icons: small circular badges instead of stock photos ---------- */
 
+.service-item {
+  --bs-gutter-x: 1.25rem;
+}
+
 .service-img-wrapper {
   max-width: 128px;
 }
