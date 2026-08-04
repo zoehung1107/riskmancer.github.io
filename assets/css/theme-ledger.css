@@ -8,7 +8,7 @@
 :root {
   /* Signature palette */
   --rm-paper: #ffffff;
-  --rm-paper-deep: #f2f1eb;
+  --rm-paper-deep: #ffffff;
   --rm-ink: #16241f;
   --rm-jade: #157b71;
   --rm-jade-deep: #0a4c47;
@@ -19,7 +19,7 @@
   /* Remap the template's own token layer onto the new palette so every
      component built on --bs-primary / --color-primary-* / --bs-dark
      inherits it automatically. */
-  --color-primary-100: #dfe9e4;
+  --color-primary-100: #ffffff;
   --color-primary-200: #c3d7cf;
   --color-primary-300: #9dbdb5;
   --color-primary-400: #2f6b62;
@@ -34,9 +34,9 @@
   --bs-dark-light: rgba(22, 36, 31, 0.72);
   --bs-dark-light-rgb: 22, 36, 31;
   --bs-light: var(--rm-paper-deep);
-  --bs-light-rgb: 242, 241, 235;
+  --bs-light-rgb: 255, 255, 255;
   --bs-light-gray: var(--rm-paper-deep);
-  --bs-light-gray-rgb: 242, 241, 235;
+  --bs-light-gray-rgb: 255, 255, 255;
   --bs-muted: rgba(22, 36, 31, 0.62);
   --bs-muted-rgb: 22, 36, 31;
 
