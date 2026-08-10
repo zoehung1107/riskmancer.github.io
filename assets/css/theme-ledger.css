@@ -226,6 +226,24 @@ body {
   min-width: 0;
 }
 
+/* Below ~700px the fixed 4rem gap + 6rem right padding + icon column leave
+   almost no room for the 620px text block, so it gets flex-shrunk down to a
+   sliver — every bullet wraps word-by-word and the section balloons to
+   several screen-heights tall. Stack icon above text and drop the
+   desktop-only spacing instead. */
+@media (max-width: 699.98px) {
+  .service-item {
+    flex-direction: column;
+    padding-right: 0;
+    gap: 1.5rem;
+  }
+
+  .service-item-body {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+}
+
 .service-img-wrapper {
   max-width: 128px;
 }
