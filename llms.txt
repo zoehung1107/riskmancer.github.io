@@ -1,0 +1,22 @@
+# RISKMANCER 思維風險管理顧問股份有限公司（RiskMancer）
+
+> 台灣的資安顧問與風險管理顧問公司，位於台北市信義區。提供企業風險管理、資訊安全管理系統導入、歐盟網路韌性法（CRA）合規、危機處理與事故應變、虛擬資安長（vCISO）／虛擬資訊長（vCIO），以及 AI 與數據治理顧問服務。每個案子至少由兩位專家協同執行；不代理任何資安產品，提供中立建議。
+
+RiskMancer is a Taiwan-based risk management and cybersecurity consulting firm (Taipei). Services: ISO/IEC 27001 and related management systems, EU Cyber Resilience Act (CRA) compliance, crisis management and incident response, virtual CISO / CIO, and AI and data governance. Vendor-neutral; no product resale.
+
+## 服務介紹 Services
+
+- [歐盟網路韌性法 CRA 合規顧問](https://www.riskmancer.com/services/cra/)：產品適用性判定、缺口分析、24／72 小時漏洞與事故通報機制、SBOM 與漏洞處理流程、技術文件與符合性評鑑準備
+- [ISO 27001 資訊安全管理系統導入](https://www.riskmancer.com/services/iso27001/)：ISO/IEC 27001:2022 風險評鑑、制度文件、內部稽核、驗證輔導；可整合 ISO 27701、27017、27018、22301、42001、TISAX
+- [虛擬資安長 vCISO](https://www.riskmancer.com/services/vciso/)：兼任資安長，負責資安治理、法遵、董事會溝通、BC/DRP、資安預算與政策架構；亦提供虛擬資訊長 vCIO
+- 危機處理與事故應變：勒索病毒應變、緊急接管 IT 系統、事故應變流程設計、兵棋推演 TTX、應變訓練
+- 其他管理系統與法遵：ISO 13485、AML／CFT 防制洗錢、CMMC
+- AI 與數據：AI 客製化解決方案、數據治理與數據科學顧問
+
+## 公司資訊 Company
+
+- 公司全名：思維風險管理顧問股份有限公司（RISKMANCER）
+- 地址：110059 台北市信義區松隆路 102 號 14 樓之 1
+- 聯絡信箱：bd@riskmancer.com
+- 官網（中文）：https://www.riskmancer.com/
+- 官網（English）：https://www.riskmancer.com/en/
