@@ -1,0 +1,249 @@
+/* ============================================================
+   RISKMANCER — 服務介紹頁 (services/*)
+   Loads after theme-ledger.css. Reuses the Ledger & Bamboo tokens.
+   ============================================================ */
+
+/* Jade hero band: the transparent header (white logo + links) sits on it,
+   the same way it sits on the home page's video hero. */
+.svc-hero {
+  background: var(--rm-jade-deep);
+  color: #fff;
+  padding: 150px 0 64px;
+}
+
+.svc-hero .svc-breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.svc-hero .svc-breadcrumb a {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+}
+
+.svc-hero .svc-breadcrumb a:hover {
+  color: var(--rm-goose);
+}
+
+.svc-hero h1 {
+  color: #fff;
+  font-size: clamp(30px, 5vw, 48px);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.svc-hero .svc-lede {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(17px, 2.2vw, 20px);
+  line-height: 1.7;
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.svc-body {
+  padding: 64px 0 88px;
+}
+
+.svc-body .svc-content {
+  max-width: 820px;
+}
+
+.svc-body h2 {
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 700;
+  color: var(--rm-ink);
+  margin: 56px 0 18px;
+  padding-top: 18px;
+  border-top: 2px solid var(--rm-jade-deep);
+}
+
+.svc-body h2:first-child {
+  margin-top: 0;
+}
+
+.svc-body h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--rm-ink);
+  margin: 28px 0 10px;
+}
+
+.svc-body p,
+.svc-body li {
+  font-size: 17px;
+  line-height: 1.85;
+  color: rgba(22, 36, 31, 0.82);
+}
+
+.svc-body ul,
+.svc-body ol {
+  padding-left: 1.3em;
+  margin-bottom: 1rem;
+}
+
+.svc-body li {
+  margin-bottom: 6px;
+}
+
+/* Key facts: label / value rows, stacks on phones (no wide tables). */
+.svc-facts {
+  border-top: 1px solid var(--rm-hairline);
+  margin: 8px 0 20px;
+}
+
+.svc-facts .svc-fact {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rm-hairline);
+}
+
+.svc-facts .svc-fact dt {
+  font-weight: 700;
+  color: var(--rm-jade-deep);
+  font-size: 16px;
+}
+
+.svc-facts .svc-fact dd {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(22, 36, 31, 0.82);
+}
+
+@media (max-width: 575.98px) {
+  .svc-facts .svc-fact {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+/* Numbered process steps */
+.svc-steps {
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0 !important;
+}
+
+.svc-steps > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 52px;
+  margin-bottom: 18px;
+}
+
+.svc-steps > li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--rm-brass);
+  letter-spacing: 0.04em;
+}
+
+.svc-steps > li strong {
+  color: var(--rm-ink);
+}
+
+/* FAQ — native <details> so it collapses on phones */
+.svc-faq details {
+  border-bottom: 1px solid var(--rm-hairline);
+  padding: 16px 0;
+}
+
+.svc-faq details:first-of-type {
+  border-top: 1px solid var(--rm-hairline);
+}
+
+.svc-faq summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--rm-ink);
+  list-style: none;
+  position: relative;
+  padding-right: 32px;
+}
+
+.svc-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.svc-faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: -2px;
+  font-size: 22px;
+  color: var(--rm-jade-deep);
+}
+
+.svc-faq details[open] summary::after {
+  content: "−";
+}
+
+.svc-faq details p {
+  margin: 12px 0 0;
+}
+
+.svc-note {
+  font-size: 14px !important;
+  color: rgba(22, 36, 31, 0.6) !important;
+}
+
+/* Related services + CTA band */
+.svc-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.svc-related a {
+  border: 1px solid var(--rm-jade-deep);
+  color: var(--rm-jade-deep);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.svc-related a:hover {
+  background: var(--rm-jade-deep);
+  color: #fff;
+}
+
+.svc-cta {
+  background: #f4f7f5;
+  border-left: 4px solid var(--rm-goose);
+  padding: 28px;
+  margin-top: 56px;
+}
+
+.svc-cta h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Home page: "深入了解" links under the services list */
+.svc-more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rm-hairline);
+}
+
+.svc-more .svc-more-label {
+  font-weight: 700;
+  color: var(--rm-ink);
+  margin-right: 4px;
+}
